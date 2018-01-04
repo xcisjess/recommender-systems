@@ -11,7 +11,7 @@ Recommender systems
 
 **Videos**
 
-[Leskovec, Rajaraman & Ullman (2017). Mining of Massive Data Sets: Recommender Systems. Coursera: Stanford, CA](https://www.youtube.com/watch?v=h9gpufJFF-0)
+[Leskovec, Rajaraman & Ullman (2017). Recommender systems: Collaborative filtering. In *Mining of Massive Data Sets*. Coursera: Stanford, CA](https://www.youtube.com/watch?v=h9gpufJFF-0)
 
 ## Assignment: Collaborative Filters for Learning
 
