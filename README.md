@@ -1,7 +1,10 @@
 # Recommender Systems
-Recommender systems 
+
+As the amount of educational data available to us has grown, the task of organizing and making use of it has become more daunting. Duval (2011) saw recommender systems as a way to deal with the "paradox of choice", the dilemma of determining what information to feed back to learners about their learning. An idealized recommender system providees a limited number of suggested metrics or new content based on the learner's past behavior and patterns of all other learners in the sample. Recommender systems may provide behavioral cues, new content, insights or suggested behavioral changes based on a comparison of the learner to all other learners in the system. 
 
 ## Tasks for this unit
+
+In this unit you will be working towards creating a recommender system for HUDK4051. This recommedner system will suggest which unit you should tackle next. As background to this task please read over the follwing materials and watch the methodological videos. If you find any other useful materials please add then under **Additional Materials** at the end of the this page and Pull Request the change back to me.
 
 **Readings**
 
