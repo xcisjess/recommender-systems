@@ -5,13 +5,13 @@ Recommender systems
 
 **Readings**
 
-[Drachsler, H., Verbert, K., Santos, O. C., & Manouselis, N. (2015). Panorama of recommender systems to support learning. In *Recommender Systems Handbook* (pp. 421-451). Springer US.](https://lirias.kuleuven.be/bitstream/123456789/476545/1/TEL_RecSys.pdf)
+[Drachsler, H., Verbert, K., Santos, O. C., & Manouselis, N. (2015). Panorama of recommender systems to support learning. In *Recommender Systems Handbook* (pp. 421-451). Springer: New York, NY.](https://lirias.kuleuven.be/bitstream/123456789/476545/1/TEL_RecSys.pdf)
 
-[Schafer, J. B., Frankowski, D., Herlocker, J., & Sen, S. (2007). Collaborative filtering recommender systems. In *The Adaptive Web* (pp. 291-324). Springer, Berlin, Heidelberg.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.130.4520&rep=rep1&type=pdf)
+[Schafer, J. B., Frankowski, D., Herlocker, J., & Sen, S. (2007). Collaborative filtering recommender systems. In *The Adaptive Web* (pp. 291-324). Springer: Berlin, Heidelberg.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.130.4520&rep=rep1&type=pdf)
 
 **Videos**
 
-[Leskovec, Rajaraman & Ullman (2017). Mining of Massive Data SetsRecommender Systems. Stanford, CA](https://www.youtube.com/watch?v=h9gpufJFF-0)
+[Leskovec, Rajaraman & Ullman (2017). Mining of Massive Data Sets: Recommender Systems. Coursera: Stanford, CA](https://www.youtube.com/watch?v=h9gpufJFF-0)
 
 ## Assignment: Collaborative Filters for Learning
 
