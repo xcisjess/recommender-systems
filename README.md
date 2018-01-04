@@ -8,4 +8,4 @@ In this unit you will be building a collaborative filter. Collaborative filters 
 
 [Schafer, J. B., Frankowski, D., Herlocker, J., & Sen, S. (2007). Collaborative filtering recommender systems. In *The Adaptive Web* (pp. 291-324). Springer, Berlin, Heidelberg.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.130.4520&rep=rep1&type=pdf)
 
-[Fazeli, S., Drachsler, H. & Sloep, P. (2017). Applying recommender systems for learning analytics: A Tutorial. in *The Handbook of Learning Analytics* (pp. 235-240). SOLAR, Vancouver, BC](https://solaresearch.org/hla-17/hla17-chapter20/)
+[Fazeli, S., Drachsler, H. & Sloep, P. (2017). Applying recommender systems for learning analytics: A tutorial. in *The Handbook of Learning Analytics* (pp. 235-240). SOLAR, Vancouver, BC](https://solaresearch.org/hla-17/hla17-chapter20/)
