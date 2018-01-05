@@ -31,3 +31,5 @@ Brinton, C. & Chiang, M. (2013). Cosine Similarity. In *Networks Illustrated: Pr
 In this assignment you will be building a collaborative filter. Collaborative filters are a class of algorithm used to suggest content to a given user (filtering) by leveraging information about many users (collaboration). There are many flavors of collaborative filter and they are very commonly used in scenarios where there is incomplete information about a user's preferences such as Netflix suggestions or product recommendations on Amazon. The instructions for the assignment are contained in the file collaborative-filter.rmd. Fork this repo, clone it to Rstudio and when you have completed it, commit the changes, push to your version on Github and pull request your answers back to this repo.
 
 ### Additional Materials
+
+[Fazeli, S., Drachsler, H. & Sloep, P. (2017). Applying recommender systems for learning analytics: A tutorial. In *The Handbook of Learning Analytics* (pp.235-240). SOLAR: Vancouver, BC](https://solaresearch.org/hla-17/hla17-chapter20/) 
