@@ -21,11 +21,15 @@ We will be using matrix operations in this assignment, so convert your data fram
 ```
 
 First, lets look at the interest data. We can generate a user-based similarity matrix based on cosine similarity using the ratings the class gave each unit. This matrix will represent the similarity of interests between students in the class.
+
 ```{r}
 #First let's transpose the matrix so that multiplication occurs by students rather than units.
 I2 <- t(I2)
 #Then we can generate the cosine similarity values for each pair of students
 install.packages(lsa) #You will need to install the lsa package to access the cosine command.
+
+#Look at your data, missing values are coded with zero not NA. Investigate cosine similarity and decide whether your missing values should be coded with zeros or NAs. Explain your choice.
+
 I.SIM <- cosine(I2) #This command generates the cosine similarity values as a new matrix. Click on I.SIM in the Global Environment pane to see what it looks like.
 diag(I.SIM) <- NA #Since each student will be most similar to themselves we want to remove that information
 ```
