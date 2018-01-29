@@ -26,7 +26,7 @@ rownames(D2) <- D1$stid
 ```
 
 First, lets look at the interest data. We can generate a user-based similarity matrix based on cosine similarity using the ratings the class gave each unit. This matrix will represent the similarity of interests between students in the class.
-```{r}
+```{r, echo = FALSE}
 #First let's transpose the matrix so that multiplication occurs by students rather than units.
 
 #Look at your data, missing values are coded with zero not NA. Investigate cosine similarity and decide whether your missing values should be coded with zeros or NAs. Explain your choice.
@@ -57,30 +57,33 @@ head(rownames(D.SIM[order(D.SIM["pred.dif",], decreasing = TRUE),]), n = 1)
 Finally, educational settings have important differences to purely commercial settings such as film or product suggestions. In education we want people not to just follow their interests as they may simply choose things that are easy for them so they learn very little. To reduce this possibility with your collaborative filter create a composite measure from interest and difficulty, then construct a similarity matrix using this measure. (HINT: PCA). Once you have built the similarity matrix generate a suggestion for a student who has just completed the "prediction" unit.
 ```{r}
 library(tidyr)
+library(lsa)
 
 I3 <- gather(I1,unit,interest, 2:7)
 D3 <- gather(D1, stid, difficulty)
 
-C1 <- data.frame(I3$interest, D3$difficulty)
-names(C1) <- c("interest", "difficulty")
+C1 <- data.frame(I3$stid, I3$unit, I3$interest, D3$difficulty)
+names(C1) <- c("stid", "unit", "interest", "difficulty")
+C1 <- filter(C1, difficulty > 0)
+C2 <- select(C1, "interest", "difficulty")
 
 #Run PCA
-pc <- prcomp(C1)
+pc <- prcomp(C2)
 #Extract PC1 loadings as new measure and attach to stid & unit
-C2 <- data.frame(I3$stid, I3$unit, pc$x)
-C2 <- select(C2, I3.stid, I3.unit, PC1)
+C3 <- data.frame(C1$stid, C1$unit, pc$x)
+C4 <- select(C3, C1.stid, C1.unit, PC1)
 #Remove int from unit label
-C2$I3.unit <- gsub(".int", "", C2$I3.unit)
+C4$C1.unit <- gsub(".int", "", C4$C1.unit)
 
 #Recreate unit by student matrix
-C3 <- spread(C2, I3.stid, PC1)
-row.names(C3) <- C3$I3.unit
-C3$I3.unit <- NULL
-C4 <- as.matrix(C3)
-C4 <- t(C4)
+C5 <- spread(C4, C1.stid, PC1)
+row.names(C5) <- C5$C1.unit
+C5$C1.unit <- NULL
+C5 <- as.matrix(C5)
+C5 <- t(C5)
 
 #Generate cosine similarity matrix for units
-C.SIM <- cosine(C4)
+C.SIM <- cosine(C5)
 diag(C.SIM) <- NA
 
 #Search for most similar unit to "neural"
