@@ -4,6 +4,7 @@ author: "Charles Lang"
 date: "1/5/2018"
 output: html_document
 ---
+YAY!!
 
 In HUDK4051 there are six units, we will use your ratings of these units in terms of both interest and difficulty to produce individual suggestions about what unit to attempt next.
 
@@ -79,8 +80,8 @@ C4$C1.unit <- gsub(".int", "", C4$C1.unit)
 C5 <- spread(C4, C1.stid, PC1)
 row.names(C5) <- C5$C1.unit
 C5$C1.unit <- NULL
-C5 <- ifelse(is.na(C5), 0, C5)
 C5 <- as.matrix(C5)
+C5 <- ifelse(is.na(C5), 0, C5)
 C5 <- t(C5)
 
 #Generate cosine similarity matrix for units
