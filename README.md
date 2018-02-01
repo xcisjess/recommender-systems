@@ -38,4 +38,4 @@ In this assignment you will be building a collaborative filter. Collaborative fi
 
 * [Fazeli, S., Drachsler, H. & Sloep, P. (2017). Applying recommender systems for learning analytics: A tutorial. In *The Handbook of Learning Analytics* (pp. 235-240). SOLAR: Vancouver, BC](https://solaresearch.org/hla-17/hla17-chapter20/) 
 
-* [Principal Compononent Analysis = Visually Explained](http://setosa.io/ev/principal-component-analysis/)
+* [Principal Compononent Analysis - Visually Explained](http://setosa.io/ev/principal-component-analysis/)
