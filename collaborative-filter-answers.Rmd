@@ -1,11 +1,9 @@
 ---
 title: "collaborative-filter"
 author: "Charles Lang"
-date: "1/5/2018"
+date: "1/31/2019"
 output: html_document
 ---
-YAY!!
-
 In HUDK4051 there are six units, we will use your ratings of these units in terms of both interest and difficulty to produce individual suggestions about what unit to attempt next.
 
 Start by uploading both the interest and difficulty csv files:
@@ -20,10 +18,10 @@ We will be using matrix operations in this assignment, so convert your data fram
 library(dplyr) 
 I2 <- select(I1, 2:7)
 I2 <- as.matrix(I2)
-rownames(I2) <- I1$stid
+rownames(I2) <- I1$name
 D2 <- select(D1, 2:7)
 D2 <- as.matrix(D2)
-rownames(D2) <- D1$stid
+rownames(D2) <- D1$name
 ```
 
 First, lets look at the interest data. We can generate a user-based similarity matrix based on cosine similarity using the ratings the class gave each unit. This matrix will represent the similarity of interests between students in the class.
@@ -42,8 +40,8 @@ diag(I.SIM) <- NA #Since each student will be most similar to themselves we want
 
 Now, we can make a quick query to find out which students are most similar to you. 
 ```{r}
-my.uni <- "bgr2106" #Input your UNI id in here
-head(rownames(I.SIM[order(I.SIM[my.uni,], decreasing = TRUE),]), n = 2) #This code orders the column of the matrix corresponding to your UNI according to similarity and returns the top two UNI ids for the students who's interests are most similar to yours
+my.name <- "XXXXX" #Input your name as it appears in the data set
+head(rownames(I.SIM[order(I.SIM[my.name,], decreasing = TRUE),]), n = 2) #This code orders the column of the matrix corresponding to your UNI according to similarity and returns the top two UNI ids for the students who's interests are most similar to yours
 ```
 
 This is a basic collaborative filter! You have used information about interest across the class to generate an individual suggestion. Email one of your top matches, you may find them to be a good person to work with or ask questions during the semester.
@@ -61,23 +59,23 @@ library(tidyr)
 library(lsa)
 
 I3 <- gather(I1,unit,interest, 2:7)
-D3 <- gather(D1, stid, difficulty)
+D3 <- gather(D1, name, difficulty)
 
-C1 <- data.frame(I3$stid, I3$unit, I3$interest, D3$difficulty)
-names(C1) <- c("stid", "unit", "interest", "difficulty")
+C1 <- data.frame(I3$name, I3$unit, I3$interest, D3$difficulty)
+names(C1) <- c("name", "unit", "interest", "difficulty")
 C1 <- filter(C1, difficulty > 0)
 C2 <- select(C1, "interest", "difficulty")
 
 #Run PCA
 pc <- prcomp(C2)
 #Extract PC1 loadings as new measure and attach to stid & unit
-C3 <- data.frame(C1$stid, C1$unit, pc$x)
-C4 <- select(C3, C1.stid, C1.unit, PC1)
+C3 <- data.frame(C1$name, C1$unit, pc$x)
+C4 <- select(C3, C1.name, C1.unit, PC1)
 #Remove int from unit label
 C4$C1.unit <- gsub(".int", "", C4$C1.unit)
 
 #Recreate unit by student matrix
-C5 <- spread(C4, C1.stid, PC1)
+C5 <- spread(C4, C1.name, PC1)
 row.names(C5) <- C5$C1.unit
 C5$C1.unit <- NULL
 C5 <- as.matrix(C5)
