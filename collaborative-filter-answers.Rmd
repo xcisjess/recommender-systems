@@ -4,6 +4,8 @@ author: "Charles Lang"
 date: "1/31/2019"
 output: html_document
 ---
+
+Yay
 In HUDK4051 there are six units, we will use your ratings of these units in terms of both interest and difficulty to produce individual suggestions about what unit to attempt next.
 
 Start by uploading both the interest and difficulty csv files:
