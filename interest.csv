@@ -1,43 +1,53 @@
-"name","pred.int","nlp.int","sna.int","neural.int","viz.int","loop.int"
-"Sihan Wang",0,0,5,0,5,0
-"Euki Sawada",0,5,0,5,0,0
-"Melissa Mock",0,3,4,0,0,0
-"Oren Ross",4,0,0,0,0,5
-"Zhitong Lei",5,0,5,0,0,0
-"Eli Groves",0,0,0,0,5,5
-"Anna Lizarov",5,0,5,0,0,0
-"Jiaying Li",0,0,0,5,5,0
-"Caoyuan Chen",0,4,0,4,0,0
-"Chieh-An Yang",0,0,0,4,0,5
-"Timothy Lee",0,1,0,0,0,5
-"Linjin Xiao",4,0,5,0,0,0
-"Qingying Zhou",0,4,0,0,5,0
-"Aidi Bian",5,0,0,0,0,5
-"Megan Russell",0,1,0,0,3,0
-"Xinyue Tan",0,0,0,2,0,4
-"Marleen Villeroy",5,0,4,0,0,0
-"Shuo-Yuan Kao",0,0,0,5,5,0
-"Jose Nava",0,5,0,0,0,5
-"Delciane Wright",0,0,0,5,0,5
-"Xixuan  Zhao",0,4,0,0,0,5
-"Jiani Yang",0,0,0,3,3,0
-"Ling Ai",4,0,4,0,0,0
-"Xinke Song",0,0,0,4,5,0
-"Yiqun Tao",5,0,4,0,0,0
-"John Bylander",5,5,0,0,0,0
-"Anshuman Krishna",0,0,4,0,0,3
-"Ayaba Kanther",0,0,0,5,4,0
-"Linan Yue",0,0,0,5,0,0
-"Siyan Yin",0,5,0,0,0,4
-"Meijuan Zeng",5,0,3,0,0,0
-"Sherry Feng",3,0,0,0,0,3
-"Sihan Wang",5,0,0,5,0,0
-"Juan Djuwadi",0,5,4,5,0,0
-"Juye Wang",0,0,0,0,4,4
-"Satra Ahmadzadeh",2,2,5,5,1,0
-"Guanren Wang",5,1,2,4,0,3
-"Yanyi Chen",5,2,3,4,4,4
-"Jia Hui Feng",2,3,3,5,1,4
-"Shijia Lin",4,1,4,4,3,2
-"Ya-Ting Yang",3,3,1,1,1,4
-"LingCai Yuan",1,5,2,0,4,0
+first,last,prediction.interest,nlp.interest,sna.interest,neural.interest,viz.interest,loop.interest,sql.interest
+Leonardo,Restrepo,5,5,4,5,2,4,5
+Jiahao,Guo,5,5,5,5,5,5,5
+Yiyi,Xie,5,5,5,5,5,4,4
+Jiancong,Shen,4,5,5,5,5,5,5
+shijie,shao,4,4,4,5,4,4,5
+Artemas,Wang,5,5,5,5,5,5,5
+Yiwen,Ma,4,5,3,5,4,5,4
+Chengxuan,Hu,4,4,3,4,5,4,4
+Sonali,Kamath,5,4,2,5,5,5,5
+Xiaowen,Chen,5,5,5,5,5,4,5
+han,ge,4,3,3,4,5,4,5
+Lingling,Miao,5,5,5,5,5,5,5
+Zhongyuan,Zhang,5,5,5,5,5,5,5
+Timothy,Lee,5,5,4,5,5,5,5
+Ziyuan,Guo,4,3,5,4,4,3,5
+Ellaine Tsz Ying,Ho,5,5,5,5,5,5,5
+Aman,Fatima,5,5,5,5,5,5,5
+Jie,Chen,5,5,4,5,5,3,5
+Luyi,Dai,5,3,4,5,5,5,5
+Bernell,Downer,5,5,5,5,5,5,3
+Xi,Yang,5,4,5,5,5,5,5
+Xinyi,Zhou,5,5,4,5,5,5,5
+Spreeha,Debchaudhury,5,4,3,3,5,5,2
+Zifan,Cao,5,5,4,5,5,5,4
+Indira,Batayeva,5,5,5,5,3,5,5
+Megan,Krou,5,5,5,5,5,5,5
+Alison,Cheng,4,4,3,3,3,4,3
+Su Won,Jung,5,5,5,5,5,5,5
+Lauren,Kim,5,5,5,5,5,5,5
+Minruo,Wang,4,4,5,5,5,4,4
+Anqi,Duan,5,5,5,5,5,5,5
+Ningyao,Xu,4,5,2,4,5,3,2
+Jingru,Zhang,1,5,4,5,3,3,5
+Yixuan,Zhu,3,4,4,3,5,4,3
+Yujun,Zhang,5,4,4,3,5,3,3
+Qiyang,Lin,5,5,4,5,5,5,5
+Jiali,Jin,3,3,5,3,4,5,5
+Xiaojue,Liu,3,3,3,3,4,5,5
+Hsiao,Yang,5,4,5,5,5,5,4
+Xudian,Zhang,2,5,3,4,4,3,5
+Zhaozhuo ,Zheng ,5,4,5,5,5,5,5
+Ruiqi,Wang,1,5,1,3,5,4,5
+Shuyue,Zhou,5,5,2,5,5,4,5
+Wanruo,Zhang,4,3,3,4,3,5,4
+chaoxiong,chen,3,5,4,3,5,3,4
+Zimo,Chen,3,3,3,3,3,3,3
+Di,Mao,3,3,3,3,3,3,3
+Juliet,Zhu,3,3,5,5,5,5,2
+Luyi,Dai,5,5,5,5,5,,
+Ziyuan,Guo,5,,5,,5,5,5
+Yawei,Zhu,5,5,5,5,5,5,5
+wen,guo,5,5,5,5,5,5,5
